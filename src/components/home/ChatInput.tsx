@@ -21,12 +21,12 @@ export function ChatInput({ onSend, disabled }: ChatInputProps) {
   return (
     <form onSubmit={handleSubmit} className="fixed bottom-20 left-0 right-0 z-30 px-4 pb-2">
       <div className="container mx-auto">
-        <div className="flex items-center gap-2 bg-card border-2 border-border rounded-xl p-2 neon-border">
+        <div className="flex items-center gap-2 bg-card border-2 border-border rounded-xl p-2">
           <input
             type="text"
             value={input}
             onChange={(e) => setInput(e.target.value)}
-            placeholder="Send a message to your AI..."
+            placeholder="크라우디와 대화해보세요"
             disabled={disabled}
             className="flex-1 bg-transparent text-card-foreground placeholder:text-muted-foreground px-3 py-2 text-sm focus:outline-none"
           />

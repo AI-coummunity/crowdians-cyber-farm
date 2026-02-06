@@ -32,10 +32,10 @@ export default function Academy() {
       {/* Title */}
       <div className="text-center">
         <h2 className="font-pixel text-xs sm:text-sm text-primary neon-text mb-1">
-          PIXEL ACADEMY
+          아카데미
         </h2>
         <p className="text-muted-foreground text-xs">
-          Train AI through teaching and grading
+          AI를 가르치고 평가함으로써 AI를 훈련시킵니다.
         </p>
       </div>
 
@@ -71,7 +71,7 @@ export default function Academy() {
           <>
             <div className="flex items-center justify-between">
               <p className="text-xs text-muted-foreground">
-                Fix AI mistakes to earn EXP
+                AI의 실수를 수정하여 경험치를 얻습니다.
               </p>
               <span className="text-xs font-pixel text-primary">
                 {quests.filter(q => q.isCompleted).length}/{quests.length}
@@ -96,7 +96,7 @@ export default function Academy() {
           <>
             <div className="flex items-center justify-between">
               <p className="text-xs text-muted-foreground">
-                Choose the better AI response
+                더 좋은 AI 응답을 선택하여 경험치를 얻습니다.
               </p>
               <span className="text-xs font-pixel text-gold">
                 {votes.filter(v => v.isCompleted).length}/{votes.length}
