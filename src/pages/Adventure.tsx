@@ -45,10 +45,10 @@ export default function Adventure() {
       {/* Title */}
       <div className="text-center">
         <h2 className="font-pixel text-xs sm:text-sm text-primary neon-text mb-1">
-          ADVENTURE ZONE
+          모험
         </h2>
         <p className="text-muted-foreground text-xs">
-          Send your AI to explore and gather resources
+          AI를 모험을 보내고 자원을 모읍니다.
         </p>
       </div>
 
@@ -125,7 +125,7 @@ export default function Adventure() {
           </div>
           
           <p className="text-xs text-muted-foreground text-center">
-            Your AI is searching for treasures in the cyber realm...
+            AI는 모험을 나가서 자원을 모읍니다...
           </p>
         </motion.div>
       )}
@@ -153,12 +153,12 @@ export default function Adventure() {
       >
         <p className="text-xs font-pixel text-muted-foreground">HOW IT WORKS</p>
         <ul className="text-xs text-muted-foreground space-y-1">
-          <li>• Send your AI on expeditions (5 seconds demo)</li>
-          <li>• Discover Gold and rare encounters</li>
-          <li>• Level up to unlock new areas</li>
+          <li>• AI를 모험을 보내고 자원을 모읍니다.</li>
+          <li>• Gold와 경험치를 얻습니다.</li>
+          <li>• 레벨업을 하여 새로운 모험을 할 수 있습니다.</li>
         </ul>
       </motion.div>
-
+      
       {/* Result Popup */}
       <ResultPopup
         isOpen={showResult}

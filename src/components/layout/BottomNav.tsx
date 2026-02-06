@@ -3,9 +3,9 @@ import { NavLink } from '@/components/NavLink';
 import { motion } from 'framer-motion';
 
 const navItems = [
-  { to: '/', icon: Home, label: 'Server Room' },
-  { to: '/academy', icon: GraduationCap, label: 'Academy' },
-  { to: '/adventure', icon: Compass, label: 'Adventure' },
+  { to: '/', icon: Home, label: '룸' },
+  { to: '/academy', icon: GraduationCap, label: '아카데미' },
+  { to: '/adventure', icon: Compass, label: '모험' },
 ];
 
 export function BottomNav() {

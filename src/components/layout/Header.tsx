@@ -8,7 +8,7 @@ export function Header() {
   return (
     <header className="fixed top-0 left-0 right-0 z-40 bg-background/90 backdrop-blur-sm border-b-2 border-border">
       <div className="container mx-auto px-4 h-14 flex items-center justify-between">
-        <h1 className="font-pixel text-xs sm:text-sm text-primary neon-text">
+        <h1 className="font-pixel text-lg sm:text-xl text-primary">
           CROWDIANS
         </h1>
         
