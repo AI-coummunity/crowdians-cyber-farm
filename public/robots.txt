@@ -12,3 +12,5 @@ Allow: /
 
 User-agent: *
 Allow: /
+
+Sitemap: https://crowdians-cyber-farm.vercel.app/sitemap.xml

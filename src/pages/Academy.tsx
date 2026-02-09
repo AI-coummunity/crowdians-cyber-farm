@@ -4,6 +4,7 @@ import { BookOpen, Vote } from 'lucide-react';
 import { QuestCard } from '@/components/academy/QuestCard';
 import { QuestModal } from '@/components/academy/QuestModal';
 import { VoteCard } from '@/components/academy/VoteCard';
+import { SEO } from '@/components/SEO';
 import { useGame } from '@/contexts/GameContext';
 import { QuestItem } from '@/types/game';
 
@@ -28,7 +29,13 @@ export default function Academy() {
   ];
 
   return (
-    <div className="space-y-6">
+    <>
+      <SEO 
+        title="아카데미"
+        description="AI를 가르치고 평가하여 AI를 훈련시키세요. Quest를 완료하고 Vote를 통해 더 나은 AI 응답을 선택하세요."
+        url="https://crowdians-cyber-farm.vercel.app/academy"
+      />
+      <div className="space-y-6">
       {/* Title */}
       <div className="text-center">
         <h2 className="font-pixel text-xs sm:text-sm text-primary neon-text mb-1">
@@ -124,6 +131,7 @@ export default function Academy() {
         onClose={() => setSelectedQuest(null)}
         onSubmit={handleQuestSubmit}
       />
-    </div>
+      </div>
+    </>
   );
 }
