@@ -6,6 +6,7 @@ import { SpeechBubble } from '@/components/home/SpeechBubble';
 import { ChatInput } from '@/components/home/ChatInput';
 import { ChatLogOverlay } from '@/components/home/ChatLogOverlay';
 import { WaitlistModal } from '@/components/home/WaitlistModal';
+import { SEO } from '@/components/SEO';
 import { useGame } from '@/contexts/GameContext';
 
 // Mock AI responses
@@ -51,7 +52,13 @@ export default function Home() {
   }, [showBubble, currentMessage]);
 
   return (
-    <div className="relative h-[calc(100vh-8rem)] flex flex-col">
+    <>
+      <SEO 
+        title="홈"
+        description="AI와 대화하고, 픽셀아트 캐릭터와 함께 AI를 훈련시키세요. Crowdians Cyber Farm에서 게임화된 AI 훈련 경험을 시작하세요."
+        url="https://crowdians-cyber-farm.vercel.app/"
+      />
+      <div className="relative h-[calc(100vh-8rem)] flex flex-col">
       {/* Action buttons */}
       <div className="absolute top-0 right-0 z-20 flex gap-2">
         {/* Waitlist button */}
@@ -107,6 +114,7 @@ export default function Home() {
         isOpen={showWaitlist}
         onClose={() => setShowWaitlist(false)}
       />
-    </div>
+      </div>
+    </>
   );
 }

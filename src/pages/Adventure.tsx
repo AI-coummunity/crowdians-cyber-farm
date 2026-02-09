@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { Compass, Clock, Zap, MapPin, Timer } from 'lucide-react';
 import { ResultPopup } from '@/components/adventure/ResultPopup';
+import { SEO } from '@/components/SEO';
 import { useGame } from '@/contexts/GameContext';
 
 export default function Adventure() {
@@ -41,7 +42,13 @@ export default function Adventure() {
     : 0;
 
   return (
-    <div className="space-y-6">
+    <>
+      <SEO 
+        title="모험"
+        description="AI를 모험에 보내고 자원을 모으세요. Gold와 경험치를 얻고 레벨업하여 새로운 모험을 시작하세요."
+        url="https://crowdians-cyber-farm.vercel.app/adventure"
+      />
+      <div className="space-y-6">
       {/* Title */}
       <div className="text-center">
         <h2 className="font-pixel text-xs sm:text-sm text-primary neon-text mb-1">
@@ -165,6 +172,7 @@ export default function Adventure() {
         onClose={() => setShowResult(false)}
         goldEarned={100}
       />
-    </div>
+      </div>
+    </>
   );
 }
